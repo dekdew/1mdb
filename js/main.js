@@ -125,7 +125,7 @@ class Game {
 
       setTimeout(() => {
         this.reset()
-      }, 300);
+      }, 800);
     } else {
       server.childNodes[1].setAttribute('src', '../img/server/server-clicked.svg')
     }
