@@ -3,145 +3,41 @@
 
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
+  <meta http-equiv=" X-UA-Compatible" content="ie=edge">
+
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-title" content="1MDB">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+  <meta name="description" content="1MDB">
+
+  <link rel="apple-touch-icon" sizes="57x57" href="./icon/apple-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="./icon/apple-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="./icon/apple-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="./icon/apple-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="./icon/apple-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="./icon/apple-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="./icon/apple-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="./icon/apple-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="./icon/apple-icon-180x180.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="./icon/android-icon-192x192.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="./icon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="./icon/favicon-96x96.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="./icon/favicon-16x16.png">
+  <link rel="manifest" href="./icon/manifest.json">
+  <meta name="msapplication-TileColor" content="#ffffff">
+  <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+  <meta name="theme-color" content="#020230" />
+
   <title>1MDB</title>
+
+  <!-- style and fonts -->
   <link href="https://fonts.googleapis.com/css?family=Cutive+Mono&display=swap" rel="stylesheet">
   <link href="https://use.fontawesome.com/releases/v5.0.8/css/all.css" rel="stylesheet">
+  <link href="./css/style.css" rel="stylesheet">
 </head>
-
-<style>
-  * {
-    font-family: 'Cutive Mono';
-  }
-
-  body {
-    padding: 0;
-    margin: 0;
-    background: linear-gradient(to bottom, #323232 0%, #3F3F3F 40%, #1C1C1C 150%), linear-gradient(to top, rgba(255, 255, 255, 0.40) 0%, rgba(0, 0, 0, 0.25) 200%);
-    background-blend-mode: multiply;
-    color: #fff;
-    width: 100vw;
-    height: 100vh;
-    overflow: hidden;
-    text-align: center;
-  }
-
-  header,
-  footer {
-    background-color: #020230;
-    height: 64px;
-    max-width: 600px;
-    width: 100%;
-    overflow: hidden;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    z-index: 99;
-  }
-
-  .header-child,
-  .footer-child {
-    padding: 0 16px;
-  }
-
-  .container {
-    background-color: #112564;
-    background-image: url("./img/bg.svg");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    margin: 0 auto;
-    height: 100%;
-    max-width: 600px;
-    width: 100%;
-    overflow: hidden;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-  }
-
-  .wrap {
-    width: 100%;
-    padding-top: 100%;
-    position: relative;
-  }
-
-  #app {
-    box-shadow: inset 0 0 200px white;
-    border: 1px solid white;
-    border-radius: 10px;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 90%;
-    height: 90%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    transition: all .2s ease-out;
-  }
-
-  .server {
-    position: absolute;
-    top: auto;
-    left: auto;
-    bottom: auto;
-    right: auto;
-    transform: translate(-50%, -50%);
-    width: 30%;
-    transition: all .3s ease-in-out;
-  }
-
-  .s1 {
-    top: 10%;
-    left: 50%;
-    transform: translateX(-50%) translateY(-10%);
-  }
-
-  .s2 {
-    top: 50%;
-    left: 10%;
-    transform: translateX(-10%) translateY(-50%);
-  }
-
-  .s3 {
-    top: 90%;
-    left: 50%;
-    transform: translateX(-50%) translateY(-90%);
-  }
-
-  .s4 {
-    top: 50%;
-    left: 90%;
-    transform: translateX(-90%) translateY(-50%);
-  }
-
-  .show {
-    display: block !important;
-  }
-
-  .hide {
-    display: none !important;
-  }
-
-  button {
-    background-color: #fff;
-    border: none;
-    border-radius: 5px;
-    height: 32px;
-    font-size: 16px;
-  }
-
-  .server-top {
-    z-index: 99;
-  }
-
-  .server-bottom {
-    z-index: -99;
-  }
-</style>
 
 <body>
   <img src="./img/server/server-nothing.svg" class="hide" width="100%">

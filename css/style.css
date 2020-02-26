@@ -1,0 +1,135 @@
+* {
+  font-family: 'Cutive Mono';
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  background: linear-gradient(to bottom, #323232 0%, #3F3F3F 40%, #1C1C1C 150%), linear-gradient(to top, rgba(255, 255, 255, 0.40) 0%, rgba(0, 0, 0, 0.25) 200%);
+  background-blend-mode: multiply;
+  color: #fff;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  text-align: center;
+}
+
+header,
+footer {
+  background-color: #020230;
+  height: 64px;
+  max-width: 600px;
+  width: 100%;
+  overflow: hidden;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 99;
+}
+
+footer {
+  padding-bottom: 32px;
+}
+
+.header-child,
+.footer-child {
+  padding: 0 16px;
+}
+
+.container {
+  background-color: #112564;
+  background-image: url("../img/bg.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 0 auto;
+  height: 100%;
+  max-width: 600px;
+  width: 100%;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.wrap {
+  width: 100%;
+  padding-top: 100%;
+  position: relative;
+}
+
+#app {
+  box-shadow: inset 0 0 200px white;
+  border: 1px solid white;
+  border-radius: 10px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 90%;
+  height: 90%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all .2s ease-out;
+}
+
+.server {
+  position: absolute;
+  top: auto;
+  left: auto;
+  bottom: auto;
+  right: auto;
+  transform: translate(-50%, -50%);
+  width: 30%;
+  transition: all .3s ease-in-out;
+}
+
+.s1 {
+  top: 10%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-10%);
+}
+
+.s2 {
+  top: 50%;
+  left: 10%;
+  transform: translateX(-10%) translateY(-50%);
+}
+
+.s3 {
+  top: 90%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-90%);
+}
+
+.s4 {
+  top: 50%;
+  left: 90%;
+  transform: translateX(-90%) translateY(-50%);
+}
+
+.show {
+  display: block !important;
+}
+
+.hide {
+  display: none !important;
+}
+
+button {
+  background-color: #fff;
+  border: none;
+  border-radius: 5px;
+  height: 32px;
+  font-size: 16px;
+}
+
+.server-top {
+  z-index: 99;
+}
+
+.server-bottom {
+  z-index: -99;
+}
