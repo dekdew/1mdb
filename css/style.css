@@ -27,10 +27,6 @@ footer {
   z-index: 99;
 }
 
-footer {
-  padding-bottom: 56px;
-}
-
 .header-child,
 .footer-child {
   padding: 0 16px;
